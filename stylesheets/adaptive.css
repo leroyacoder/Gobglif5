@@ -340,6 +340,7 @@
 
   .twobig1 {
     background-image: url("../img/fonfortext.png");
+    font-size: 40vw!important;
     width: 97vw;
     height: 76vw;
     margin: 1vw;
@@ -1135,6 +1136,7 @@
 
   .twobig1 {
     background-image: url("../img/fonfortext.png");
+    font-size: 40vw!important;
     width: 50vw;
     height: 40vw;
     margin: 1vw;
