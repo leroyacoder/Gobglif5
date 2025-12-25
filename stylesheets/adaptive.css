@@ -1,0 +1,3291 @@
+@media screen and (min-width: 1px) and (max-width: 450px) {
+  body {
+    margin: 0%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+  }
+
+  .block1 {
+    position: relative;
+    width: 100%;
+    height: 189vw;
+    overflow: hidden;
+  }
+
+  /* зацикленное изменение начертания названия */
+
+  .welck_img {
+    position: absolute;
+    width: 100%;
+    height: 189vw;
+    background-size: 100%;
+    display: flex;
+  }
+
+  .name {
+    position: absolute;
+    width: 69vw;
+    height: 12.7vw;
+    margin-top: 80vw;
+    margin-left: 15.4vw;
+    display: block;
+
+    z-index: 3;
+    background-image: url("../img/name4.svg");
+    background-repeat: no-repeat;
+    background-size: 138.6vw;
+    animation: rename 0.5s steps(2) infinite;
+  }
+
+  @keyframes rename {
+    0% {
+      background-position: 0px top;
+    }
+    100% {
+      background-position: -138.6vw top;
+    }
+  }
+
+  /* зацикленное движение и сияние звезд */
+
+  .star1 {
+    position: absolute;
+    width: 63vw;
+    height: 65vw;
+    margin-left: -60vw;
+    z-index: 0;
+
+    transform: rotate(-90deg); 
+    animation: fly1 4s ease-in-out infinite, star1 8s linear infinite,
+      fade1 2s infinite ease-in-out;
+  }
+
+  @keyframes fade1 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly1 {
+    0% {
+      top: 2%;
+      left: 60%;
+    }
+    50% {
+      top: 15%;
+      left: 50%;
+    }
+    100% {
+      top: 2%;
+      left: 60%;
+    }
+  }
+
+  .star2 {
+    position: absolute;
+    width: 20vw;
+    height: 18vw;
+    margin-left: 13vw;
+    z-index: 0;
+    animation: fly2 4s ease-in-out infinite, star2 8s linear infinite,
+      fade2 2.2s infinite ease-in-out;
+  }
+
+  @keyframes fade2 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly2 {
+    0% {
+      top: 5%;
+      left: 30%;
+    }
+    50% {
+      top: 7%;
+      left: 35%;
+    }
+    100% {
+      top: 5%;
+      left: 30%;
+    }
+  }
+
+  .star3 {
+    position: absolute;
+    width: 40vw;
+    height: 43vw;
+    z-index: 0;
+    animation: fly3 4s ease-in-out infinite, star3 8s linear infinite,
+      fade3 2.3s infinite ease-in-out;
+  }
+
+  @keyframes fade3 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly3 {
+    0% {
+      top: 70%;
+      left: 70%;
+    }
+    50% {
+      top: 72%;
+      left: 75%;
+    }
+    100% {
+      top: 70%;
+      left: 70%;
+    }
+  }
+
+  .star4 {
+    position: absolute;
+    width: 30vw;
+    height: 32vw;
+    margin-left: -20vw;
+    z-index: 0;
+    animation: fly4 4s ease-in-out infinite, star4 8s linear infinite,
+      fade4 2s infinite ease-in-out;
+  }
+
+  @keyframes fade4 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly4 {
+    0% {
+      top: 50%;
+      left: 80%;
+    }
+    50% {
+      top: 58%;
+      left: 85%;
+    }
+    100% {
+      top: 50%;
+      left: 80%;
+    }
+  }
+
+  .star5 {
+    position: absolute;
+    width: 34vw;
+    height: 25vw;
+    margin-top: 10vw;
+    margin-left: -14vw;
+    z-index: 0;
+    animation: fly5 4s ease-in-out infinite, star5 8s linear infinite,
+      fade5 2.2s infinite ease-in-out;
+  }
+
+  @keyframes fade5 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly5 {
+    0% {
+      top: 22%;
+      left: 5%;
+    }
+    50% {
+      top: 24%;
+      left: 10%;
+    }
+    100% {
+      top: 22%;
+      left: 5%;
+    }
+  }
+
+  .star6 {
+    position: absolute;
+    width: 30vw;
+    height: 32vw;
+    margin-left: -1.8vw;
+    z-index: 0;
+    animation: fly6 4s ease-in-out infinite, star6 8s linear infinite,
+      fade6 2.3s infinite ease-in-out;
+  }
+
+  @keyframes fade6 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly6 {
+    0% {
+      top: 17%;
+      left: 10%;
+    }
+    50% {
+      top: 20%;
+      left: 22%;
+    }
+    100% {
+      top: 17%;
+      left: 10%;
+    }
+  }
+
+  .star7 {
+    position: absolute;
+    width: 40vw;
+    height: 29vw;
+    z-index: 0;
+    animation: fly7 4s ease-in-out infinite, star7 8s linear infinite,
+      fade7 2s infinite ease-in-out;
+  }
+
+  @keyframes fade7 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly7 {
+    0% {
+      top: 70%;
+      left: 30%;
+    }
+    50% {
+      top: 72%;
+      left: 35%;
+    }
+    100% {
+      top: 70%;
+      left: 30%;
+    }
+  }
+
+  /* бегущая строка, останавливается и меняет цвет при наведении */
+
+  .block2 {
+    margin-top: 3.2vw;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .track {
+    display: inline-block;
+    animation: run 25s linear infinite;
+    white-space: nowrap;
+    width: 500%;
+
+    text-align: center;
+  }
+
+  .track:hover {
+    animation-play-state: paused;
+  }
+
+  .word {
+    display: inline;
+    color: #c9bfb4;
+    transition: color 0.2s;
+  }
+
+  .word:hover {
+    color: #417777;
+  }
+
+  @keyframes run {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .block3 {
+    width: 100%;
+    height: 237vw;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  /* текст увеличивающийся в рамочке при наведении */
+
+  .twobig1 {
+    background-image: url("../img/fonfortext.png");
+    width: 97vw;
+    height: 76vw;
+    margin: 1vw;
+    margin-top: 13vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .twotext {
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 3.8vw;
+    font-weight: 500;
+    color: #ffffff;
+    display: block;
+    line-height: 1.4;
+  }
+  .block3_left {
+    margin-top: 4vw;
+    background-image: url("../img/stolik.png");
+    width: 102vw;
+    height: 71vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .pasatizi {
+    position: absolute;
+    width: 35vw;
+    height: 28svw;
+    margin-top: 7vw;
+    margin-left: 27vw;
+    cursor: url("../img/icon11.svg"), auto;
+    animation: wobble-hor-bottom1 3s linear infinite both;
+  }
+  .pinset {
+    position: absolute;
+    width: 40vw;
+    height: 29vw;
+    margin-top: 8vw;
+    margin-left: 56vw;
+    cursor: url("../img/cursor3.svg"), auto;
+    animation: wobble-hor-bottom2 3s linear infinite both;
+  }
+  .salfetka {
+    position: absolute;
+    width: 26vw;
+    height: 26.4vw;
+    margin-left: 1.5vw;
+    cursor: url("../img/cursor4.svg"), auto;
+    animation: wobble-hor-bottom3 3s linear infinite both;
+  }
+  .gvozdi {
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    margin-top: 0.5vw;
+    margin-left: 30vw;
+    cursor: url("../img/cursor2.svg"), auto;
+    animation: wobble-hor-bottom4 3s linear infinite both;
+  }
+  .kolzo {
+    position: absolute;
+    width: 15vw;
+    height: 16vw;
+    margin-top: 47.4vw;
+    margin-left: 52vw;
+    cursor: url("../img/cursor5.svg"), auto;
+    animation: krug 3s linear infinite;
+  }
+  .twobig2 {
+    position: absolute;
+    margin-top: 15vw;
+    left: 0%;
+    width: 100vw;
+    height: 65vw;
+    cursor: pointer;
+  }
+
+  .righthand {
+    width: 55vw;
+    height: 49.6vw;
+    position: absolute;
+    margin-left: 50%;
+
+    z-index: 3;
+    animation: wobble-hor-bottom5 3s linear infinite both;
+  }
+  .lefthend {
+    width: 55vw;
+    height: 49.6vw;
+    position: absolute;
+    margin-left: 0vw;
+    /* margin-top: -16vw; */
+    z-index: 3;
+    animation: wobble-hor-bottom6 3s linear infinite both;
+  }
+  .block4 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5vw;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .one,
+  .two,
+  .three {
+    position: relative;
+    width: 64vw;
+    height: 74vw;
+    flex-shrink: 0;
+  }
+
+  .fonforgoblin1,
+  .changefonforgoblin1,
+  .fonforgoblin2,
+  .changefonforgoblin2,
+  .fonforgoblin3,
+  .changefonforgoblin3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+  }
+
+  .changefonforgoblin1,
+  .changefonforgoblin2,
+  .changefonforgoblin3 {
+    opacity: 0;
+  }
+
+  .one:hover .changefonforgoblin1 {
+    opacity: 1;
+  }
+
+  .two:hover .changefonforgoblin2 {
+    opacity: 1;
+  }
+
+  .three:hover .changefonforgoblin3 {
+    opacity: 1;
+  }
+
+  .goblin1,
+  .goblin2,
+  .goblin3,
+  .glaza1,
+  .glaza2,
+  .glaza3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+  }
+
+  .goblin1 {
+    z-index: 2;
+    width: 55.7vw;
+    height: 63.7vw;
+    margin-top: -5%;
+  }
+
+  .goblin2 {
+    z-index: 2;
+    width: 56vw;
+    height: 44vw;
+  }
+
+  .goblin3 {
+    z-index: 2;
+    width: 48vw;
+    height: 56vw;
+  }
+
+  .goblin1:hover, .goblin2:hover, .goblin3:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+  transition: filter 0.3s ease;
+}
+
+  .glaza1 {
+    pointer-events: none;
+    z-index: 3;
+    width: 20vw;
+    height: 8vw;
+    margin-top: -16%;
+    margin-left: 6%;
+    animation: eyesMovement1 3s infinite ease-in-out;
+  }
+
+  .glaza2 {
+    pointer-events: none;
+    z-index: 3;
+    width: 20vw;
+    height: 8vw;
+    margin-top: -21%;
+    margin-left: 2%;
+    animation: eyesMovement2 3.5s infinite ease-in-out;
+    animation-delay: 0.5s;
+  }
+
+  .glaza3 {pointer-events: none;
+    z-index: 3;
+    width: 22vw;
+    height: 8vw;
+    margin-top: -22%;
+    margin-left: 6%;
+    animation: eyesMovement3 4s infinite ease-in-out;
+    animation-delay: 1s;
+  }
+  .block5 {
+    position: absolute;
+    width: 100%;
+    height: 24vw;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .stroke {
+    position: absolute;
+    width: 1572vw;
+    height: 100%;
+    animation: beg 38s linear infinite;
+  }
+
+  .begstroc {
+    height: 100%;
+    width: 786vw;
+    float: left;
+    pointer-events: auto;
+  }
+  .block6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -40%;
+    overflow: hidden;
+  }
+
+  /* зацикленное нагревание камня */
+
+  .one1 {
+    position: relative;
+    width: 90.5vw;
+    height: 79.4vw;
+    margin-top: 65%;
+    margin-left: 6vw;
+  }
+
+  .fonforkamen {
+    position: absolute;
+    width: 83.8vw;
+    height: 65.7vw;
+    margin-left: 1%;
+    z-index: 1;
+  }
+
+  .kamenkrasni {
+    position: absolute;
+    width: 85vw;
+    height: 76vw;
+    margin-left: 6.5vw;
+    margin-top: -13.7vw;
+    z-index: 2;
+  }
+
+  .kamencherni {
+    position: absolute;
+    width: 85vw;
+    height: 76vw;
+    margin-left: 6.5vw;
+    margin-top: -13.7vw;
+    z-index: 2;
+    z-index: 3;
+    opacity: 1;
+    animation: nagrev 5s ease-in-out infinite alternate;
+  }
+  .fortracks {
+    position: relative;
+    overflow: hidden;
+    height: 160vw;
+    width: 183vw;
+    margin-left: 0vw;
+    margin-top: 0vw;
+  }
+
+  .track2 {
+    position: absolute;
+    width: 200%;
+    height: 20vw;
+    margin-top: 0%;
+    margin-left: 0%;
+    overflow: hidden;
+    z-index: 0;
+    animation: run2 25s linear infinite;
+    white-space: nowrap;
+    display: flex;
+  }
+  .track3 {
+    position: absolute;
+    height: 20vw;
+    width: 200%;
+    margin-top: 130vw;
+    margin-left: 0%;
+    overflow: hidden;
+    z-index: 0;
+    animation: run3 25s linear infinite reverse;
+    white-space: nowrap;
+    display: flex;
+  }
+  .track2 .word {
+    display: inline-block;
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #c9bfb4;
+    margin-right: 4vw;
+    line-height: 1.4;
+    transition: color 0.3s;
+    flex-shrink: 0;
+  }
+  .track3 .word {
+    display: inline-block;
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #c9bfb4;
+    margin-right: 4vw;
+    line-height: 1.4;
+    transition: color 0.3s;
+    flex-shrink: 0;
+  }
+  /* гифка сплав */
+  .splav {
+    position: absolute;
+    width: 65vw;
+    height: 103vw;
+    left: 17vw;
+    margin-top: -136%;
+    z-index: 1;
+    object-fit: cover;
+    outline: none;
+    border: none;
+  }
+  .two2 {
+    position: relative;
+    width: 103.8vw;
+    height: 65vw;
+    margin-top: 0%;
+  }
+
+  .fonforcolzo {
+    position: absolute;
+    width: 83vw;
+    height: 65vw;
+    margin-left: 7.7vw;
+    z-index: 1;
+  }
+
+  .kolzo2 {
+    position: absolute;
+    width: 39vw;
+    height: 54vw;
+    margin-left: 35vw;
+    margin-top: 5.3vw;
+    z-index: 3;
+  }
+
+  .starforcolzo1 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 44vw;
+    height: 60vw;
+    margin-left: 0%;
+    top: -25%;
+    animation: fly8 6s ease-in-out infinite, fade8 3s infinite ease-in-out;
+  }
+
+  .starforcolzo2 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 40vw;
+    height: 40vw;
+    margin-left: 2%;
+    margin-top: 12%;
+    animation: fly9 7s ease-in-out infinite, fade9 4s infinite ease-in-out;
+  }
+
+  .starforcolzo3 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 44vw;
+    height: 60vw;
+    margin-left: 55%;
+    margin-top: 20%;
+    animation: fly10 5s ease-in-out infinite, fade10 3.5s infinite ease-in-out;
+  }
+
+  .starforcolzo4 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 20vw;
+    height: 40vw;
+    margin-left: 65%;
+    margin-top: 15%;
+    animation: fly11 6.5s ease-in-out infinite, fade11 4.5s infinite ease-in-out;
+  }
+  .textforpodval {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .textforpodvalKamila {
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    flex: 0 0 45%;
+    text-align: center;
+    margin-right: auto;
+    transform-origin: left center;
+  }
+
+  .textforpodvalYA {
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    flex: 0 0 45%;
+    text-align: center;
+    margin-left: auto;
+    transform-origin: right center;
+  }
+
+  .textforpodvalKamila:hover,
+  .textforpodvalYA:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+    color: #c9bfb4;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 769px) {
+  body {
+    margin: 0%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+  }
+
+  .block1 {
+    position: relative;
+    width: 100vw;
+    height: 67vw;
+    overflow: hidden;
+  }
+
+  /* зацикленное изменение начертания названия */
+
+  .welck_img {
+    position: absolute;
+    width: 106vw;
+    height: 67vw;
+    background-size: 100%;
+    display: flex;
+  }
+
+  .name {
+    position: absolute;
+    width: 76vw;
+    height: 14vw;
+    margin-top: 25.7vw;
+    margin-left: 12.3vw;
+    display: block;
+
+    z-index: 3;
+    background-image: url("../img/name3.svg");
+    background-repeat: no-repeat;
+    background-size: 152vw;
+    animation: rename 0.5s steps(2) infinite;
+  }
+
+  @keyframes rename {
+    0% {
+      background-position: 0px top;
+    }
+    100% {
+      background-position: -152vw top;
+    }
+  }
+
+  /* зацикленное движение и сияние звезд */
+
+  .star1 {
+    position: absolute;
+    width: 43vw;
+    height: 45vw;
+    z-index: 0;
+    animation: fly1 4s ease-in-out infinite, star1 8s linear infinite,
+      fade1 2s infinite ease-in-out;
+  }
+
+  @keyframes fade1 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly1 {
+    0% {
+      top: 2%;
+      left: 60%;
+    }
+    50% {
+      top: 15%;
+      left: 50%;
+    }
+    100% {
+      top: 2%;
+      left: 60%;
+    }
+  }
+
+  .star2 {
+    position: absolute;
+    width: 28vw;
+    height: 35vw;
+    z-index: 0;
+    animation: fly2 4s ease-in-out infinite, star2 8s linear infinite,
+      fade2 2.2s infinite ease-in-out;
+  }
+
+  @keyframes fade2 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly2 {
+    0% {
+      top: 5%;
+      left: 30%;
+    }
+    50% {
+      top: 7%;
+      left: 35%;
+    }
+    100% {
+      top: 5%;
+      left: 30%;
+    }
+  }
+
+  .star3 {
+    position: absolute;
+    width: 14vw;
+    height: 13vw;
+    z-index: 0;
+    animation: fly3 4s ease-in-out infinite, star3 8s linear infinite,
+      fade3 2.3s infinite ease-in-out;
+  }
+
+  @keyframes fade3 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly3 {
+    0% {
+      top: 70%;
+      left: 70%;
+    }
+    50% {
+      top: 72%;
+      left: 75%;
+    }
+    100% {
+      top: 70%;
+      left: 70%;
+    }
+  }
+
+  .star4 {
+    position: absolute;
+    width: 14vw;
+    height: 13vw;
+    z-index: 0;
+    animation: fly4 4s ease-in-out infinite, star4 8s linear infinite,
+      fade4 2s infinite ease-in-out;
+  }
+
+  @keyframes fade4 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly4 {
+    0% {
+      top: 50%;
+      left: 80%;
+    }
+    50% {
+      top: 58%;
+      left: 85%;
+    }
+    100% {
+      top: 50%;
+      left: 80%;
+    }
+  }
+
+  .star5 {
+    position: absolute;
+    width: 34vw;
+    height: 25vw;
+    margin-top: 23vw;
+    margin-left: -14vw;
+    z-index: 0;
+    animation: fly5 4s ease-in-out infinite, star5 8s linear infinite,
+      fade5 2.2s infinite ease-in-out;
+  }
+
+  @keyframes fade5 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly5 {
+    0% {
+      top: 22%;
+      left: 5%;
+    }
+    50% {
+      top: 24%;
+      left: 10%;
+    }
+    100% {
+      top: 22%;
+      left: 5%;
+    }
+  }
+
+  .star6 {
+    position: absolute;
+    width: 20vw;
+    height: 19vw;
+    margin-left: -1.8vw;
+    z-index: 0;
+    animation: fly6 4s ease-in-out infinite, star6 8s linear infinite,
+      fade6 2.3s infinite ease-in-out;
+  }
+
+  @keyframes fade6 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly6 {
+    0% {
+      top: 17%;
+      left: 10%;
+    }
+    50% {
+      top: 20%;
+      left: 22%;
+    }
+    100% {
+      top: 17%;
+      left: 10%;
+    }
+  }
+
+  .star7 {
+    position: absolute;
+    width: 20vw;
+    height: 19vw;
+    z-index: 0;
+    animation: fly7 4s ease-in-out infinite, star7 8s linear infinite,
+      fade7 2s infinite ease-in-out;
+  }
+
+  @keyframes fade7 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly7 {
+    0% {
+      top: 70%;
+      left: 30%;
+    }
+    50% {
+      top: 72%;
+      left: 35%;
+    }
+    100% {
+      top: 70%;
+      left: 30%;
+    }
+  }
+
+  /* бегущая строка, останавливается и меняет цвет при наведении */
+
+  .block2 {
+    margin-top: 3.2vw;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .track {
+    display: inline-block;
+    animation: run 25s linear infinite;
+    white-space: nowrap;
+    width: 500%;
+
+    text-align: center;
+  }
+
+  .track:hover {
+    animation-play-state: paused;
+  }
+
+  .word {
+    display: inline;
+    color: #c9bfb4;
+    transition: color 0.2s;
+  }
+
+  .word:hover {
+    color: #417777;
+  }
+
+  @keyframes run {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .block3 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  /* текст увеличивающийся в рамочке при наведении */
+
+  .twobig1 {
+    background-image: url("../img/fonfortext.png");
+    width: 50vw;
+    height: 40vw;
+    margin: 1vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* столик с подвижными элементами + заменой курсора */
+
+  .block3_left {
+    margin-top: 4vw;
+    background-image: url("../img/stolik.png");
+    width: 100vw;
+    height: 71vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .pasatizi {
+    position: absolute;
+    width: 35vw;
+    height: 28svw;
+    margin-top: 7vw;
+    margin-left: 27vw;
+    cursor: url("../img/icon11.svg"), auto;
+    animation: wobble-hor-bottom1 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom1 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-20px) rotate(-6deg);
+    }
+    30% {
+      transform: translateX(5px) rotate(6deg);
+    }
+    45% {
+      transform: translateX(-5px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+
+  .pinset {
+    position: absolute;
+    width: 40vw;
+    height: 29vw;
+    margin-top: 8vw;
+    margin-left: 56vw;
+    cursor: url("../img/cursor3.svg"), auto;
+    animation: wobble-hor-bottom2 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom2 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(15px) rotate(6deg);
+    }
+    30% {
+      transform: translateX(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateX(5px) rotate(3.6deg);
+    }
+    60% {
+      transform: translateX(-9px) rotate(-2.4deg);
+    }
+    75% {
+      transform: translateX(6px) rotate(1.2deg);
+    }
+  }
+
+  .salfetka {
+    position: absolute;
+    width: 26vw;
+    height: 26.4vw;
+    margin-left: 1.5vw;
+    cursor: url("../img/cursor4.svg"), auto;
+    animation: wobble-hor-bottom3 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom3 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(20px) rotate(-6deg);
+    }
+    30% {
+      transform: translateX(5px) rotate(6deg);
+    }
+    45% {
+      transform: translateX(5px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      transform: translateX(6px) rotate(-1.2deg);
+    }
+  }
+
+  .gvozdi {
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    margin-top: 0.5vw;
+    margin-left: 30vw;
+    cursor: url("../img/cursor2.svg"), auto;
+    animation: wobble-hor-bottom4 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom4 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-15px) rotate(6deg);
+    }
+    30% {
+      transform: translateX(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateX(-5px) rotate(3.6deg);
+    }
+    60% {
+      transform: translateX(-9px) rotate(-2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+
+  .kolzo {
+    position: absolute;
+    width: 15vw;
+    height: 16vw;
+    margin-top: 47.4vw;
+    margin-left: 52vw;
+    cursor: url("../img/cursor5.svg"), auto;
+    animation: krug 3s linear infinite;
+  }
+
+  @keyframes krug {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* зацикленное двидение рук + появление звезды при наведении */
+
+  .twobig2 {
+    position: absolute;
+    margin-top: -16vw;
+    left: 47%;
+    width: 53vw;
+    height: 34.6vw;
+    cursor: pointer;
+  }
+
+  .righthand {
+    width: 24vw;
+    height: 20vw;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -16vw;
+    z-index: 3;
+    animation: wobble-hor-bottom5 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom5 {
+    0%,
+    100% {
+      transform: translateY(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    30% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    60% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+  }
+
+  .lefthend {
+    width: 24vw;
+    height: 20vw;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: -16vw;
+    z-index: 3;
+    animation: wobble-hor-bottom6 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom6 {
+    0%,
+    100% {
+      transform: translateY(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    30% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    60% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+  }
+
+  .starforhands {
+    width: 34vw;
+    height: 33vw;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -18%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+
+  .twobig2:hover .starforhands {
+    opacity: 1;
+  }
+
+  /* зацикленное движение глаз у гоблинов + замена рамочек при наведении */
+
+  .block4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5vw;
+    gap: 1vw;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .one,
+  .two,
+  .three {
+    position: relative;
+    width: 32vw;
+    height: 37vw;
+    flex-shrink: 0;
+  }
+
+  .fonforgoblin1,
+  .changefonforgoblin1,
+  .fonforgoblin2,
+  .changefonforgoblin2,
+  .fonforgoblin3,
+  .changefonforgoblin3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+  }
+
+  .changefonforgoblin1,
+  .changefonforgoblin2,
+  .changefonforgoblin3 {
+    opacity: 0;
+  }
+
+  .one:hover .changefonforgoblin1 {
+    opacity: 1;
+  }
+
+  .two:hover .changefonforgoblin2 {
+    opacity: 1;
+  }
+
+  .three:hover .changefonforgoblin3 {
+    opacity: 1;
+  }
+
+  .goblin1,
+  .goblin2,
+  .goblin3,
+  .glaza1,
+  .glaza2,
+  .glaza3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+  }
+
+  .goblin1 {
+    z-index: 2;
+    width: 28vw;
+    height: 32vw;
+    margin-top: -5%;
+  }
+
+  .goblin2 {
+    z-index: 2;
+    width: 28vw;
+    height: 24vw;
+  }
+
+  .goblin3 {
+    z-index: 2;
+    width: 24vw;
+    height: 28vw;
+  }
+
+ 
+.goblin1:hover, .goblin2:hover, .goblin3:hover {
+  filter: drop-shadow(0 0 15px rgba(179, 179, 179, 0.8));
+  transition: filter 0.3s ease;
+}
+
+  .glaza1 {
+    pointer-events: none;
+    z-index: 3;
+    width: 10vw;
+    height: 4vw;
+    margin-top: -16%;
+    margin-left: 6%;
+    animation: eyesMovement1 3s infinite ease-in-out;
+  }
+
+  .glaza2 {
+    pointer-events: none;
+    z-index: 3;
+    width: 10vw;
+    height: 4vw;
+    margin-top: -21%;
+    margin-left: 2%;
+    animation: eyesMovement2 3.5s infinite ease-in-out;
+    animation-delay: 0.5s;
+  }
+
+  .glaza3 {
+    pointer-events: none;
+    z-index: 3;
+    width: 11vw;
+    height: 4vw;
+    margin-top: -22%;
+    margin-left: 6%;
+    animation: eyesMovement3 4s infinite ease-in-out;
+    animation-delay: 1s;
+  }
+
+  @keyframes eyesMovement1 {
+    0%,
+    100% {
+      margin-left: 6%;
+    }
+    25% {
+      margin-left: 5%;
+    }
+    50% {
+      margin-left: 6%;
+    }
+    75% {
+      margin-left: 8%;
+    }
+  }
+
+  @keyframes eyesMovement2 {
+    0%,
+    100% {
+      margin-left: 2%;
+    }
+    25% {
+      margin-left: 1%;
+    }
+    50% {
+      margin-left: 2%;
+    }
+    75% {
+      margin-left: 4%;
+    }
+  }
+
+  @keyframes eyesMovement3 {
+    0%,
+    100% {
+      margin-left: 6%;
+    }
+    25% {
+      margin-left: 4%;
+    }
+    50% {
+      margin-left: 6%;
+    }
+    75% {
+      margin-left: 8%;
+    }
+  }
+
+  /* бегущая строка с наковальнями */
+
+  .block5 {
+    position: absolute;
+    width: 100%;
+    height: 24vw;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .stroke {
+    position: absolute;
+    width: 1572vw;
+    height: 100%;
+    animation: beg 38s linear infinite;
+  }
+
+  .begstroc {
+    height: 100%;
+    width: 786vw;
+    float: left;
+    pointer-events: auto;
+  }
+
+  @keyframes beg {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-500vw);
+    }
+  }
+
+  .block6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -40%;
+    overflow: hidden;
+  }
+
+  /* зацикленное нагревание камня */
+
+  .one1 {
+    position: relative;
+    width: 100%;
+    height: 27vw;
+    margin-top: 65%;
+  }
+
+  .fonforkamen {
+    position: absolute;
+    width: 34vw;
+    height: 27vw;
+    margin-left: 1%;
+    z-index: 1;
+  }
+
+  .kamenkrasni {
+    position: absolute;
+    width: 35vw;
+    height: 31vw;
+    margin-left: 2.8%;
+    margin-top: -5.2%;
+    z-index: 2;
+  }
+
+  .kamencherni {
+    position: absolute;
+    width: 35vw;
+    height: 31vw;
+    margin-left: 2.8%;
+    margin-top: -5.2%;
+    z-index: 2;
+    z-index: 3;
+    opacity: 1;
+    animation: nagrev 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes nagrev {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* бегущие строки с остановкой и заменой цвета */
+
+  .fortracks {
+    position: relative;
+    overflow: hidden;
+    height: 30vw;
+    width: 80vw;
+    margin-left: 20vw;
+    margin-top: -28.5%;
+  }
+
+  .track2 {
+    position: absolute;
+    width: 200%;
+    margin-top: 22%;
+    margin-left: 0%;
+    overflow: hidden;
+    z-index: 0;
+    animation: run2 25s linear infinite;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .track2:hover {
+    animation-play-state: paused;
+  }
+
+  .track2 .word {
+    display: inline-block;
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #c9bfb4;
+    margin-right: 4vw;
+    line-height: 1.4;
+    transition: color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .track2 .word:hover {
+    color: #417777;
+  }
+
+  .track3 {
+    position: absolute;
+    width: 200%;
+    margin-top: 4%;
+    margin-left: 0%;
+    overflow: hidden;
+    z-index: 0;
+    animation: run3 25s linear infinite reverse;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .track3:hover {
+    animation-play-state: paused;
+  }
+
+  .track3 .word {
+    display: inline-block;
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #c9bfb4;
+    margin-right: 4vw;
+    line-height: 1.4;
+    transition: color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .track3 .word:hover {
+    color: #417777;
+  }
+
+  @keyframes run2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes run3 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* гифка сплав */
+  .splav {
+    position: absolute;
+    width: 62vw;
+    height: 39vw;
+    left: 0;
+    margin-top: 7%;
+    z-index: 1;
+    object-fit: cover;
+    outline: none;
+    border: none;
+  }
+
+  /* зацикленное движение и сияние звезд */
+
+  .two2 {
+    position: relative;
+    width: 100%;
+    height: 27vw;
+    margin-top: 10%;
+  }
+
+  .fonforcolzo {
+    position: absolute;
+    width: 34vw;
+    height: 27vw;
+    margin-left: 63%;
+    z-index: 1;
+  }
+
+  .kolzo2 {
+    position: absolute;
+    width: 16vw;
+    height: 22vw;
+    margin-left: 74%;
+    margin-top: 2%;
+    z-index: 3;
+  }
+
+  .starforcolzo1 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 18vw;
+    height: 30vw;
+    margin-left: 60%;
+    top: -25%;
+    animation: fly8 6s ease-in-out infinite, fade8 3s infinite ease-in-out;
+  }
+
+  .starforcolzo2 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 20vw;
+    height: 30vw;
+    margin-left: 58%;
+    margin-top: -2%;
+    animation: fly9 7s ease-in-out infinite, fade9 4s infinite ease-in-out;
+  }
+
+  .starforcolzo3 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 18vw;
+    height: 30vw;
+    margin-left: 82%;
+    margin-top: 4%;
+    animation: fly10 5s ease-in-out infinite, fade10 3.5s infinite ease-in-out;
+  }
+
+  .starforcolzo4 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 20vw;
+    height: 30vw;
+    margin-left: 85%;
+    margin-top: -1%;
+    animation: fly11 6.5s ease-in-out infinite, fade11 4.5s infinite ease-in-out;
+  }
+
+  @keyframes fly8 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-1vw, -1vw);
+    }
+    50% {
+      transform: translate(1vw, 0.5vw);
+    }
+    75% {
+      transform: translate(0.5vw, 1vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fly9 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(1vw, -0.5vw);
+    }
+    50% {
+      transform: translate(-0.5vw, 1vw);
+    }
+    75% {
+      transform: translate(-1vw, -0.5vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fly10 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0.5vw, -1vw);
+    }
+    50% {
+      transform: translate(-1vw, 0.5vw);
+    }
+    75% {
+      transform: translate(1vw, 0.5vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fly11 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-0.5vw, 0.5vw);
+    }
+    50% {
+      transform: translate(1vw, -0.5vw);
+    }
+    75% {
+      transform: translate(-0.5vw, -1vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fade8 {
+    0%,
+    100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes fade9 {
+    0%,
+    100% {
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes fade10 {
+    0%,
+    100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes fade11 {
+    0%,
+    100% {
+      opacity: 0.85;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+
+  /* зацикленное нагревание подвала */
+
+  .block7 {
+    position: relative;
+    width: 100vw;
+    height: 12.6vw;
+    margin-top: 10%;
+  }
+
+  .podval {
+    position: relative;
+    width: 100vw;
+    height: 12.6vw;
+  }
+
+  .podvalkrasni {
+    position: absolute;
+    width: 100vw;
+    height: 12.6vw;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .podvalcherni {
+    position: absolute;
+    width: 100vw;
+    height: 12vw;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 1;
+    animation: podval-animation 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes podval-animation {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* расширение текста внутри коробочки при наведении с заменой цвета */
+
+  .textforpodval {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .textforpodvalKamila {
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    flex: 0 0 45%;
+    text-align: center;
+    margin-right: auto;
+    transform-origin: left center;
+  }
+
+  .textforpodvalYA {
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    flex: 0 0 45%;
+    text-align: center;
+    margin-left: auto;
+    transform-origin: right center;
+  }
+
+  .textforpodvalKamila:hover,
+  .textforpodvalYA:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+    color: #c9bfb4;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  body {
+    margin: 0%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000000;
+  }
+
+  .block1 {
+    position: relative;
+    width: 100vw;
+    height: 71vw;
+    overflow: hidden;
+  }
+
+  /* зацикленное изменение начертания названия */
+
+  .welck_img {
+    position: absolute;
+    width: 100%;
+    height: 71vw;
+    background-size: 100%;
+    display: flex;
+  }
+
+  .name {
+    position: absolute;
+    width: 76vw;
+    height: 14vw;
+    margin-top: 25.7vw;
+    margin-left: 12.3vw;
+    display: block;
+
+    z-index: 3;
+    background-image: url("../img/name3.svg");
+    background-repeat: no-repeat;
+    background-size: 152vw;
+    animation: rename 0.5s steps(2) infinite;
+  }
+
+  @keyframes rename {
+    0% {
+      background-position: 0px top;
+    }
+    100% {
+      background-position: -152vw top;
+    }
+  }
+
+  /* зацикленное движение и сияние звезд */
+
+  .star1 {
+    position: absolute;
+    width: 43vw;
+    height: 45vw;
+    z-index: 0;
+    animation: fly1 4s ease-in-out infinite, star1 8s linear infinite,
+      fade1 2s infinite ease-in-out;
+  }
+
+  @keyframes fade1 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly1 {
+    0% {
+      top: 2%;
+      left: 60%;
+    }
+    50% {
+      top: 15%;
+      left: 50%;
+    }
+    100% {
+      top: 2%;
+      left: 60%;
+    }
+  }
+
+  .star2 {
+    position: absolute;
+    width: 28vw;
+    height: 35vw;
+    z-index: 0;
+    animation: fly2 4s ease-in-out infinite, star2 8s linear infinite,
+      fade2 2.2s infinite ease-in-out;
+  }
+
+  @keyframes fade2 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly2 {
+    0% {
+      top: 5%;
+      left: 30%;
+    }
+    50% {
+      top: 7%;
+      left: 35%;
+    }
+    100% {
+      top: 5%;
+      left: 30%;
+    }
+  }
+
+  .star3 {
+    position: absolute;
+    width: 14vw;
+    height: 13vw;
+    z-index: 0;
+    animation: fly3 4s ease-in-out infinite, star3 8s linear infinite,
+      fade3 2.3s infinite ease-in-out;
+  }
+
+  @keyframes fade3 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly3 {
+    0% {
+      top: 70%;
+      left: 70%;
+    }
+    50% {
+      top: 72%;
+      left: 75%;
+    }
+    100% {
+      top: 70%;
+      left: 70%;
+    }
+  }
+
+  .star4 {
+    position: absolute;
+    width: 14vw;
+    height: 13vw;
+    z-index: 0;
+    animation: fly4 4s ease-in-out infinite, star4 8s linear infinite,
+      fade4 2s infinite ease-in-out;
+  }
+
+  @keyframes fade4 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly4 {
+    0% {
+      top: 50%;
+      left: 80%;
+    }
+    50% {
+      top: 58%;
+      left: 85%;
+    }
+    100% {
+      top: 50%;
+      left: 80%;
+    }
+  }
+
+  .star5 {
+    position: absolute;
+    width: 34vw;
+    height: 25vw;
+    margin-top: 23vw;
+    margin-left: -14vw;
+    z-index: 0;
+    animation: fly5 4s ease-in-out infinite, star5 8s linear infinite,
+      fade5 2.2s infinite ease-in-out;
+  }
+
+  @keyframes fade5 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly5 {
+    0% {
+      top: 22%;
+      left: 5%;
+    }
+    50% {
+      top: 24%;
+      left: 10%;
+    }
+    100% {
+      top: 22%;
+      left: 5%;
+    }
+  }
+
+  .star6 {
+    position: absolute;
+    width: 20vw;
+    height: 19vw;
+    margin-left: -1.8vw;
+    z-index: 0;
+    animation: fly6 4s ease-in-out infinite, star6 8s linear infinite,
+      fade6 2.3s infinite ease-in-out;
+  }
+
+  @keyframes fade6 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly6 {
+    0% {
+      top: 17%;
+      left: 10%;
+    }
+    50% {
+      top: 20%;
+      left: 22%;
+    }
+    100% {
+      top: 17%;
+      left: 10%;
+    }
+  }
+
+  .star7 {
+    position: absolute;
+    width: 20vw;
+    height: 19vw;
+    z-index: 0;
+    animation: fly7 4s ease-in-out infinite, star7 8s linear infinite,
+      fade7 2s infinite ease-in-out;
+  }
+
+  @keyframes fade7 {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes fly7 {
+    0% {
+      top: 70%;
+      left: 30%;
+    }
+    50% {
+      top: 72%;
+      left: 35%;
+    }
+    100% {
+      top: 70%;
+      left: 30%;
+    }
+  }
+
+  /* бегущая строка, останавливается и меняет цвет при наведении */
+
+  .block2 {
+    margin-top: 3.2vw;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .track {
+    display: inline-block;
+    animation: run 25s linear infinite;
+    white-space: nowrap;
+    width: 500%;
+
+    text-align: center;
+  }
+
+  .track:hover {
+    animation-play-state: paused;
+  }
+
+  .word {
+    display: inline;
+    color: #c9bfb4;
+    transition: color 0.2s;
+  }
+
+  .word:hover {
+    color: #417777;
+  }
+
+  @keyframes run {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+  .block3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* текст увеличивающийся в рамочке при наведении */
+
+  .twobig1 {
+    background-image: url("../img/fonfortext.png");
+    width: 50vw;
+    height: 40vw;
+    margin: 1vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* столик с подвижными элементами + заменой курсора */
+
+  .block3_left {
+    margin-top: 4vw;
+
+    background-image: url("../img/stolik.png");
+    width: 106vw;
+    height: 72vw;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+
+  .pasatizi {
+    position: absolute;
+    width: 35vw;
+    height: 28svw;
+    margin-top: 7vw;
+    margin-left: 27vw;
+    cursor: url("../img/icon11.svg"), auto;
+    animation: wobble-hor-bottom1 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom1 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-20px) rotate(-6deg);
+    }
+    30% {
+      transform: translateX(5px) rotate(6deg);
+    }
+    45% {
+      transform: translateX(-5px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }
+
+  .pinset {
+    position: absolute;
+    width: 40vw;
+    height: 29vw;
+    margin-top: 8vw;
+    margin-left: 56vw;
+    cursor: url("../img/cursor3.svg"), auto;
+    animation: wobble-hor-bottom2 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom2 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(15px) rotate(6deg);
+    }
+    30% {
+      transform: translateX(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateX(5px) rotate(3.6deg);
+    }
+    60% {
+      transform: translateX(-9px) rotate(-2.4deg);
+    }
+    75% {
+      transform: translateX(6px) rotate(1.2deg);
+    }
+  }
+
+  .salfetka {
+    position: absolute;
+    width: 26vw;
+    height: 26.4vw;
+
+    margin-left: 1.5vw;
+    cursor: url("../img/cursor4.svg"), auto;
+    animation: wobble-hor-bottom3 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom3 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(20px) rotate(-6deg);
+    }
+    30% {
+      transform: translateX(5px) rotate(6deg);
+    }
+    45% {
+      transform: translateX(5px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      transform: translateX(6px) rotate(-1.2deg);
+    }
+  }
+
+  .gvozdi {
+    position: absolute;
+    width: 14vw;
+    height: 14vw;
+    margin-top: 0.5vw;
+    margin-left: 30vw;
+    cursor: url("../img/cursor2.svg"), auto;
+    animation: wobble-hor-bottom4 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom4 {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-15px) rotate(6deg);
+    }
+    30% {
+      transform: translateX(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateX(-5px) rotate(3.6deg);
+    }
+    60% {
+      transform: translateX(-9px) rotate(-2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(1.2deg);
+    }
+  }
+
+  .kolzo {
+    position: absolute;
+    width: 15vw;
+    height: 16vw;
+    margin-top: 47.4vw;
+    margin-left: 52vw;
+    cursor: url("../img/cursor5.svg"), auto;
+    animation: krug 3s linear infinite;
+  }
+
+  @keyframes krug {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* зацикленное двидение рук + появление звезды при наведении */
+
+  .twobig2 {
+    position: absolute;
+    margin-top: -16vw;
+    left: 47%;
+    width: 53vw;
+    height: 34.6vw;
+    cursor: pointer;
+  }
+
+  .righthand {
+    width: 24vw;
+    height: 20vw;
+    position: absolute;
+    margin-left: 50%;
+    margin-top: -16vw;
+    z-index: 3;
+    animation: wobble-hor-bottom5 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom5 {
+    0%,
+    100% {
+      transform: translateY(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    30% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    60% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+  }
+
+  .lefthend {
+    width: 24vw;
+    height: 20vw;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: -16vw;
+    z-index: 3;
+    animation: wobble-hor-bottom6 3s linear infinite both;
+  }
+
+  @keyframes wobble-hor-bottom6 {
+    0%,
+    100% {
+      transform: translateY(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    30% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    45% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+    60% {
+      transform: translateY(-5px) rotate(-6deg);
+    }
+    75% {
+      transform: translateY(-15px) rotate(6deg);
+    }
+  }
+
+  .starforhands {
+    width: 34vw;
+    height: 33vw;
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -18%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+
+  .twobig2:hover .starforhands {
+    opacity: 1;
+  }
+
+  /* зацикленное движение глаз у гоблинов + замена рамочек при наведении */
+
+  .block4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5vw;
+    gap: 1vw;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .one,
+  .two,
+  .three {
+    position: relative;
+    width: 32vw;
+    height: 37vw;
+    flex-shrink: 0;
+  }
+
+  .fonforgoblin1,
+  .changefonforgoblin1,
+  .fonforgoblin2,
+  .changefonforgoblin2,
+  .fonforgoblin3,
+  .changefonforgoblin3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.3s ease;
+  }
+
+  .changefonforgoblin1,
+  .changefonforgoblin2,
+  .changefonforgoblin3 {
+    opacity: 0;
+  }
+
+  .one:hover .changefonforgoblin1 {
+    opacity: 1;
+  }
+
+  .two:hover .changefonforgoblin2 {
+    opacity: 1;
+  }
+
+  .three:hover .changefonforgoblin3 {
+    opacity: 1;
+  }
+
+  .goblin1,
+  .goblin2,
+  .goblin3,
+  .glaza1,
+  .glaza2,
+  .glaza3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+  }
+
+  .goblin1 {
+    z-index: 2;
+    width: 28vw;
+    height: 32vw;
+    margin-top: -5%;
+  }
+
+  .goblin2 {
+    z-index: 2;
+    width: 28vw;
+    height: 24vw;
+  }
+
+  .goblin3 {
+    z-index: 2;
+    width: 24vw;
+    height: 28vw;
+  }
+
+  .goblin1:hover, .goblin2:hover, .goblin3:hover {
+  filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+  transition: filter 0.3s ease;
+}
+
+  .glaza1 {
+    pointer-events: none;
+    z-index: 3;
+    width: 10vw;
+    height: 4vw;
+    margin-top: -16%;
+    margin-left: 6%;
+    animation: eyesMovement1 3s infinite ease-in-out;
+  }
+
+  .glaza2 {
+    pointer-events: none;
+    z-index: 3;
+    width: 10vw;
+    height: 4vw;
+    margin-top: -21%;
+    margin-left: 2%;
+    animation: eyesMovement2 3.5s infinite ease-in-out;
+    animation-delay: 0.5s;
+  }
+
+  .glaza3 {
+    pointer-events: none;
+    z-index: 3;
+    width: 11vw;
+    height: 4vw;
+    margin-top: -22%;
+    margin-left: 6%;
+    animation: eyesMovement3 4s infinite ease-in-out;
+    animation-delay: 1s;
+  }
+
+  @keyframes eyesMovement1 {
+    0%,
+    100% {
+      margin-left: 6%;
+    }
+    25% {
+      margin-left: 5%;
+    }
+    50% {
+      margin-left: 6%;
+    }
+    75% {
+      margin-left: 8%;
+    }
+  }
+
+  @keyframes eyesMovement2 {
+    0%,
+    100% {
+      margin-left: 2%;
+    }
+    25% {
+      margin-left: 1%;
+    }
+    50% {
+      margin-left: 2%;
+    }
+    75% {
+      margin-left: 4%;
+    }
+  }
+
+  @keyframes eyesMovement3 {
+    0%,
+    100% {
+      margin-left: 6%;
+    }
+    25% {
+      margin-left: 4%;
+    }
+    50% {
+      margin-left: 6%;
+    }
+    75% {
+      margin-left: 8%;
+    }
+  }
+
+  /* бегущая строка с наковальнями */
+
+  .block5 {
+    position: absolute;
+    width: 100%;
+    height: 24vw;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  .stroke {
+    position: absolute;
+    width: 1572vw;
+    height: 100%;
+    animation: beg 38s linear infinite;
+  }
+
+  .begstroc {
+    height: 100%;
+    width: 786vw;
+    float: left;
+    pointer-events: auto;
+  }
+
+  @keyframes beg {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-500vw);
+    }
+  }
+
+  .block6 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: -40%;
+    overflow: hidden;
+  }
+
+  /* зацикленное нагревание камня */
+
+  .one1 {
+    position: relative;
+    width: 100%;
+    height: 27vw;
+    margin-top: 65%;
+  }
+
+  .fonforkamen {
+    position: absolute;
+    width: 34vw;
+    height: 27vw;
+    margin-left: 1%;
+    z-index: 1;
+  }
+
+  .kamenkrasni {
+    position: absolute;
+    width: 35vw;
+    height: 31vw;
+    margin-left: 2.8%;
+    margin-top: -5.2%;
+    z-index: 2;
+  }
+
+  .kamencherni {
+    position: absolute;
+    width: 35vw;
+    height: 31vw;
+    margin-left: 2.8%;
+    margin-top: -5.2%;
+    z-index: 2;
+    z-index: 3;
+    opacity: 1;
+    animation: nagrev 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes nagrev {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* бегущие строки с остановкой и заменой цвета */
+
+  .fortracks {
+    position: relative;
+    overflow: hidden;
+    height: 30vw;
+    width: 80vw;
+    margin-left: 20vw;
+    margin-top: -28.5%;
+  }
+
+  .track2 {
+    position: absolute;
+    width: 200%;
+    margin-top: 22%;
+    margin-left: 0%;
+    overflow: hidden;
+    z-index: 0;
+    animation: run2 25s linear infinite;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .track2:hover {
+    animation-play-state: paused;
+  }
+
+  .track2 .word {
+    display: inline-block;
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #c9bfb4;
+    margin-right: 4vw;
+    line-height: 1.4;
+    transition: color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .track2 .word:hover {
+    color: #417777;
+  }
+
+  .track3 {
+    position: absolute;
+    width: 200%;
+    margin-top: 4%;
+    margin-left: 0%;
+    overflow: hidden;
+    z-index: 0;
+    animation: run3 25s linear infinite reverse;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  .track3:hover {
+    animation-play-state: paused;
+  }
+
+  .track3 .word {
+    display: inline-block;
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2vw;
+    font-weight: 500;
+    color: #c9bfb4;
+    margin-right: 4vw;
+    line-height: 1.4;
+    transition: color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .track3 .word:hover {
+    color: #417777;
+  }
+
+  @keyframes run2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes run3 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  /* гифка сплав */
+
+  .splav {
+    position: absolute;
+    width: 62vw;
+    height: 39vw;
+    left: 0;
+    margin-top: 7%;
+    z-index: 1;
+    object-fit: cover;
+    outline: none;
+    border: none;
+  }
+
+  /* зацикленное движение и сияние звезд */
+
+  .two2 {
+    position: relative;
+    width: 100%;
+    height: 27vw;
+    margin-top: 10%;
+  }
+
+  .fonforcolzo {
+    position: absolute;
+    width: 34vw;
+    height: 27vw;
+    margin-left: 63%;
+    z-index: 1;
+  }
+
+  .kolzo2 {
+    position: absolute;
+    width: 16vw;
+    height: 22vw;
+    margin-left: 74%;
+    margin-top: 2%;
+    z-index: 3;
+  }
+
+  .starforcolzo1 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 18vw;
+    height: 30vw;
+    margin-left: 60%;
+    top: -25%;
+    animation: fly8 6s ease-in-out infinite, fade8 3s infinite ease-in-out;
+  }
+
+  .starforcolzo2 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 20vw;
+    height: 30vw;
+    margin-left: 58%;
+    margin-top: -2%;
+    animation: fly9 7s ease-in-out infinite, fade9 4s infinite ease-in-out;
+  }
+
+  .starforcolzo3 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 18vw;
+    height: 30vw;
+    margin-left: 82%;
+    margin-top: 4%;
+    animation: fly10 5s ease-in-out infinite, fade10 3.5s infinite ease-in-out;
+  }
+
+  .starforcolzo4 {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 20vw;
+    height: 30vw;
+    margin-left: 85%;
+    margin-top: -1%;
+    animation: fly11 6.5s ease-in-out infinite, fade11 4.5s infinite ease-in-out;
+  }
+
+  @keyframes fly8 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-1vw, -1vw);
+    }
+    50% {
+      transform: translate(1vw, 0.5vw);
+    }
+    75% {
+      transform: translate(0.5vw, 1vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fly9 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(1vw, -0.5vw);
+    }
+    50% {
+      transform: translate(-0.5vw, 1vw);
+    }
+    75% {
+      transform: translate(-1vw, -0.5vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fly10 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(0.5vw, -1vw);
+    }
+    50% {
+      transform: translate(-1vw, 0.5vw);
+    }
+    75% {
+      transform: translate(1vw, 0.5vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fly11 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-0.5vw, 0.5vw);
+    }
+    50% {
+      transform: translate(1vw, -0.5vw);
+    }
+    75% {
+      transform: translate(-0.5vw, -1vw);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  @keyframes fade8 {
+    0%,
+    100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+
+  @keyframes fade9 {
+    0%,
+    100% {
+      opacity: 0.9;
+    }
+    50% {
+      opacity: 0.4;
+    }
+  }
+
+  @keyframes fade10 {
+    0%,
+    100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes fade11 {
+    0%,
+    100% {
+      opacity: 0.85;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+
+  /* зацикленное нагревание подвала */
+
+  .block7 {
+    position: relative;
+    width: 100vw;
+    height: 12.6vw;
+    margin-top: 10%;
+  }
+
+  .podval {
+    position: relative;
+    width: 100vw;
+    height: 12.6vw;
+  }
+
+  .podvalkrasni {
+    position: absolute;
+    width: 100vw;
+    height: 12.6vw;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .podvalcherni {
+    position: absolute;
+    width: 100vw;
+    height: 12.6vw;
+    object-fit: cover;
+    z-index: 2;
+    opacity: 1;
+    animation: podval-animation 5s ease-in-out infinite alternate;
+  }
+
+  @keyframes podval-animation {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* расширение текста внутри коробочки при наведении с заменой цвета */
+
+  .textforpodval {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .textforpodvalKamila {
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    flex: 0 0 45%;
+    text-align: center;
+    margin-right: auto;
+    transform-origin: left center;
+  }
+
+  .textforpodvalYA {
+    font-family: "NotoSansDisplay", sans-serif;
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    flex: 0 0 45%;
+    text-align: center;
+    margin-left: auto;
+    transform-origin: right center;
+  }
+
+  .textforpodvalKamila:hover,
+  .textforpodvalYA:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-out;
+    color: #c9bfb4;
+  }
+}
+
+@media screen and (min-width: 1366px) and (max-width: 1440px) {
+  /* маленькие ноуты */
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+  /* desctop */
+}
+
+/* @media screen and (min-width: 1921px) {
+Дополнительно большие экраны } 
+Ориентация добавляется по необходимости и доп диапазоны тоже */
