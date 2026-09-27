@@ -1,8 +1,14 @@
 @media screen and (min-width: 1px) and (max-width: 450px) {
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
   body {
     margin: 0%;
     width: 100%;
     overflow-x: hidden;
+    max-width: 100vw;
     background-color: #000000;
   }
 
@@ -1118,6 +1124,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12vw;
+    margin-top: 11vw;
   }
 
   .textforpodvalKamila {
@@ -1142,7 +1149,7 @@
 
   .textforpodvalKamila:hover,
   .textforpodvalYA:hover {
-    transform: scale(1.08);
+    transform: scale(1.03);
     transition: all 0.5s ease-out;
     color: #c9bfb4;
   }
@@ -1158,20 +1165,20 @@
 
   .podvalkrasni {
     position: absolute;
-    top: 0;
-    width: 540vw;
-    height: 100%;
-    margin-left: -200vw;
+    top: -11vw;
+    left: 0;
+    width: 100%;
+    height: 71vw;
     object-fit: cover;
     z-index: 1;
   }
 
   .podvalcherni {
     position: absolute;
-    top: 0;
-    width: 540vw;
-    height: 100%;
-    margin-left: -200vw;
+    top: -11vw;
+    left: 0;
+    width: 100%;
+    height: 71vw;
     object-fit: cover;
     z-index: 2;
     opacity: 1;
