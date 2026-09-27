@@ -572,6 +572,63 @@
     cursor: url("../img/cursor5.svg"), auto;
     animation: krug 3s linear infinite;
   }
+
+  .pasatizi,
+  .pinset,
+  .salfetka,
+  .gvozdi,
+  .kolzo {
+    outline: none;
+  }
+
+  .label-pasatizi,
+  .label-pinset,
+  .label-salfetka,
+  .label-gvozdi,
+  .label-kolzo {
+    display: block;
+    position: absolute;
+    width: 30vw;
+    height: 10.55vw;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease-in-out;
+  }
+
+  .label-pasatizi {
+    margin-top: 23.86vw;
+    margin-left: 36.64vw;
+  }
+
+  .label-pinset {
+    margin-top: 21.42vw;
+    margin-left: 70.48vw;
+  }
+
+  .label-salfetka {
+    margin-top: 20.04vw;
+    margin-left: 2.06vw;
+  }
+
+  .label-gvozdi {
+    margin-top: 7.47vw;
+    margin-left: 26.33vw;
+  }
+
+  .label-kolzo {
+    margin-top: 63.98vw;
+    margin-left: 53.17vw;
+  }
+
+  .pasatizi:focus + .label-pasatizi,
+  .pinset:focus + .label-pinset,
+  .salfetka:focus + .label-salfetka,
+  .gvozdi:focus + .label-gvozdi,
+  .kolzo:focus + .label-kolzo {
+    opacity: 1;
+  }
+
   .twobig2 {
     position: relative;
     width: 77.02vw;

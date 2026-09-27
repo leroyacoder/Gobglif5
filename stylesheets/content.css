@@ -504,6 +504,15 @@ margin-left: 60%;
   animation: krug 3s linear infinite;
 }
 
+.label-pasatizi,
+.label-pinset,
+.label-salfetka,
+.label-gvozdi,
+.label-kolzo {
+  display: none;
+  pointer-events: none;
+}
+
 @keyframes krug {
   0% {
     transform: rotate(0deg);
