@@ -46,6 +46,16 @@ body {
 
 /* зацикленное движение и сияние звезд */
 
+.star1a,
+.star2a,
+.star3a,
+.star4a,
+.star5a,
+.star6a,
+.star7a {
+  display: none;
+}
+
 .star1 {
   position: absolute;
   width: 36vw;
@@ -336,6 +346,7 @@ margin-left: 60%;
   width: 50vw;
   height: 40vw;
   margin: 1vw;
+  margin-top: 1.4vw;
   background-size: 100%;
   background-repeat: no-repeat;
 }
@@ -774,6 +785,12 @@ margin-left: 60%;
   height: 17vw;
   overflow: hidden;
   background-color: #000;
+}
+
+/* дублирующая бегущая строка с наковальнями только для мобильной версии */
+
+.block5-duplicate {
+  display: none;
 }
 
 .stroke {
