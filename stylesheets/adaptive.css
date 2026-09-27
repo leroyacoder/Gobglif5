@@ -1123,8 +1123,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12vw;
-    margin-top: 11vw;
+    gap: 6vw;
+    margin-top: 4vw;
   }
 
   .textforpodvalKamila {
@@ -1157,7 +1157,7 @@
   .block7 {
     position: relative;
     width: 100%;
-    height: 60vw;
+    height: 49vw;
     margin-top: 9.66vw;
     margin-bottom: 20vw;
     overflow: hidden;
@@ -1165,20 +1165,20 @@
 
   .podvalkrasni {
     position: absolute;
-    top: -11vw;
+    top: -15vw;
     left: 0;
     width: 100%;
-    height: 71vw;
+    height: 64vw;
     object-fit: cover;
     z-index: 1;
   }
 
   .podvalcherni {
     position: absolute;
-    top: -11vw;
+    top: -15vw;
     left: 0;
     width: 100%;
-    height: 71vw;
+    height: 64vw;
     object-fit: cover;
     z-index: 2;
     opacity: 1;
